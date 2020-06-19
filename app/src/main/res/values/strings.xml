@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">RB Tiles</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_play_game">PlayGame</string>
+
+    <string name="title_activity_type3x2">type3x2</string>
+
+    <string name="title_activity_type3x3">type3x3</string>
+
+    <string name="title_activity_game_over">GameOver</string>
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    android:animateLayoutChanges="true"
+
+    tools:context=".FullscreenActivity"
+    android:orientation="vertical">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <LinearLayout
+        android:id="@+id/mainmenu"
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text=""
+        android:orientation="vertical"
+        android:textColor="#33b5e5"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RB TILES"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/gameOver"
+            android:textColor="#000"
+            android:layout_marginBottom="150dp"
+            />
+        <Button
+            android:id="@+id/play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Play"
+            android:textSize="@dimen/buttons"
+            android:background="#33b5e5"/>
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:text="Exit"
+            android:textSize="@dimen/buttons"
+            android:background="#F55749"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/levels"
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text=""
+        android:orientation="vertical"
+        android:textColor="#33b5e5"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/type1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:textAllCaps="false"
+            android:text="3x1"
+            android:textSize="@dimen/buttons"
+            android:background="#33b5e5"/>
+
+        <Button
+            android:id="@+id/type2"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="3x2"
+            android:textSize="@dimen/buttons"
+            android:background="#F55749"/>
+        <Button
+            android:id="@+id/type3"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:textAllCaps="false"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"
+            android:text="3x3"
+            android:textSize="@dimen/buttons"
+            android:background="#F55749"/>
+    </LinearLayout>
+
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+<!---->
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+<!---->
+<!---->
+        </LinearLayout>
+
+</LinearLayout>
